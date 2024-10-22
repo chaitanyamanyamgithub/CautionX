@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CautionX</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Side Menu -->
+        <div class="sidebar">
+            <h2>CautionX</h2>
+            <ul>
+                <li id="url-detection-btn">URL Detection</li>
+                <li id="threat-analysis-btn">Threat Analysis</li>
+                <li id="logs-btn">Logs</li>
+                <li id="settings-btn">Settings</li>
+            </ul>
+        </div>
+
+        <!-- Right Side Content -->
+        <div class="content">
+            <!-- URL Detection Section -->
+            <div id="url-detection" class="section active">
+                <h3>URL Detection</h3>
+                <form id="url-form">
+                    <input type="text" id="url-input" name="url" placeholder="Enter URL">
+                    <div class="button-group">
+                        <button type="submit" id="check-url-btn">Check</button>
+                        <button type="button" id="retry-url-btn" class="red-button">Retry</button>
+                    </div>
+                </form>
+                <div id="url-result" class="result-box"></div>
+            </div>
+
+            <!-- Threat Analysis Section -->
+            <div id="threat-analysis" class="section">
+                <h3>Threat Analysis</h3>
+                <form id="threat-form">
+                    <input type="number" name="num1" placeholder="Number 1">
+                    <input type="number" name="num2" placeholder="Number 2">
+                    <input type="number" name="num3" placeholder="Number 3">
+                    <input type="number" name="num4" placeholder="Number 4">
+                    <div class="button-group">
+                        <button type="submit" id="check-threat-btn">Check</button>
+                        <button type="button" id="retry-threat-btn" class="red-button">Retry</button>
+                    </div>
+                </form>
+                <div id="threat-result" class="result-box"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Logs and Settings -->
+    <div id="popup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-text">Coming soon! 🚀 Stay tuned!</div>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
